@@ -255,6 +255,12 @@ var mensData = [
 
   var cart = JSON.parse(localStorage.getItem("myCart"))||[]
 
+  var length = cart.length;
+  var items = document.getElementById("icon");
+  items.innerText= `  ${length}`;
+  items.style.fontSize="18px";
+  items.style.color="orange"
+
   mensData.map(function (elem) {
     var box = document.createElement("div");
 
@@ -288,7 +294,6 @@ var mensData = [
     btn.innerText="Add to Cart"
     btn.addEventListener("click",function(){
         addTocart(elem)
-        document.getElementById("icon").innerText = "ADASDASD";
     })
     var span = document.createElement("span");
     span.setAttribute("class","glyphicon glyphicon-shopping-cart")

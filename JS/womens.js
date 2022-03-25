@@ -457,6 +457,7 @@ var womensData = [
   ];
 
   var cart = JSON.parse(localStorage.getItem("myCart"))||[]
+  
   var length = cart.length;
   var items = document.getElementById("icon");
   items.innerText= `  ${length}`;
