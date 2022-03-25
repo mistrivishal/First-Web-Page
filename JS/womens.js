@@ -481,17 +481,15 @@ var womensData = [
 
     var Sprice = document.createElement("p");
     Sprice.innerText = "₹ " + elem.strikedoffprice;
-    Sprice.style.textDecoration="line-through"
-    Sprice.style.fontSize="14px"
-    Sprice.style.color="grey"
-    Sprice.style.fontWeight="400"
+    Sprice.setAttribute("class","Sprice")
+
 
      var discount =Math.floor(100 - ((+elem.price*100)/+elem.strikedoffprice))
 
     var disc = document.createElement("p")
     disc.innerText=`${discount}% off`
-    disc.style.color="#5aa02c"
-    disc.style.fontSize="13px"
+    disc.setAttribute("class","dis")
+
 
     var btn = document.createElement("button")
     btn.innerText="Add to Cart"
