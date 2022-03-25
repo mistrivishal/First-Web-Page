@@ -15,7 +15,7 @@ function loginFun() {
       RegUser[i].password == enteredPass
     ) {
       alert("login successfull");
-      window.location.href = "index.html";
+      window.location.href = "/index.html";
       break;
     } else {
         alert("Wrong Credentials please try again");
