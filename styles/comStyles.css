@@ -150,8 +150,8 @@ span{
 #container>div{
     width:100%;
     /* border: 1px solid; */
-    /* padding: 25px; */
-    /* display: grid; */
+    padding: 25px 8px;
+    display: grid;
     background-color:transparent;
     /* background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%); */
 }
@@ -163,12 +163,12 @@ span{
     border-radius: 15px;
 }
 #container>div>img{
-    width: 100%;
-    height: auto;
+    width: 90%;
+    /* height: auto; */
     border-radius: 10px;
     /* margin-left:-100px */
     margin: auto;
-    margin-top: 0px;
+    /* margin-top: 0px; */
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     cursor: pointer;
 }
@@ -178,6 +178,7 @@ span{
 }
 #container>div>h4{
     font-weight: 500;
+    padding: 0px 20px;
     /* margin-top: 0px; */
 }
 #container>div>h4:hover{
@@ -192,6 +193,7 @@ span{
     font-family: 'Roboto', sans-serif;
     /* color: #fac25b; */
     font-weight: 600; 
+    padding: 0px 20px;
     /* border: 1px solid; */
     margin-left: 5px;
     margin-top: -15px;
@@ -213,6 +215,7 @@ span{
     background-color:#ff9f00; 
     border: none;
     cursor: pointer;
+    font-weight: 500;
 }
 .price>button:hover{
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -391,21 +394,20 @@ p>a{
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: auto;
     grid-gap:0px;
+    padding: 20px;
     /* margin: auto; */
     /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;     */
-    padding: 20px 0px;
     box-sizing: border-box;
     background-color: rgb(238, 238, 238); 
     margin-top: 20px;
     /* border-radius: 20px;  */
-    
     /* background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%); */
 }
 #container1>div{
     box-sizing: border-box;
     /* border: 1px solid; */
-    width: 90%;
-    padding: 25px;
+    width: 100%;
+    padding: 20px 5px;
     display: grid;
     background-color:transparent;
     box-sizing: border-box;
@@ -420,11 +422,11 @@ p>a{
 }
 #container1>div>img{
     width: 80%;
-    height: 80%;
+    /* height: 80%; */
     border-radius: 10px;
     /* margin-left:-100px */
     margin: auto;
-    margin-top: 0px;
+    /* margin-top: 0px; */
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     cursor: pointer;
 }
@@ -437,12 +439,13 @@ p>a{
     /* margin-top: 0px; */
     font-size: 14px;
     text-align: center;
+    padding: 0px 20px;
 }
 #container1>div>h4:hover{
     color: rgb(64, 64, 233);
 }
 .price1{
-    width: 100%;
+    width: 95%;
     display: grid;
     grid-template-columns:repeat(3,1fr);
     grid-template-rows: auto;
@@ -453,19 +456,24 @@ p>a{
     /* color: #fac25b; */
     font-weight: 600; 
     /* border: 1px solid; */
+    padding: 0px 20px;
     margin-left: 5px;
     margin-top: -15px;
     justify-content: center;
 }
 
 .price1>button{
-    width: 200%;
+    width: 250%;
     padding: 6px 12px;
     color: white;
     background-color:#ff9f00; 
     border: none;
     cursor: pointer;
-    font-size: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.price1>button:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 .cartTotal{
     width: 30%;
