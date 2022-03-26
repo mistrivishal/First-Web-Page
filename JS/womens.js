@@ -512,4 +512,5 @@ var womensData = [
   function addTocart(elem){
     cart.push(elem)
     localStorage.setItem("myCart",JSON.stringify(cart))
+    window.location.reload()
   }

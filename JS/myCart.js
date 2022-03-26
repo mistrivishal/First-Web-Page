@@ -28,11 +28,18 @@ subTotal.textContent = `Subtotal (${items} item): ₹ ${total}.00/-`;
 var dis = document.createElement("p");
 dis.textContent = `You save total: ₹ ${discount} hurray!`;
 
-var thanks = document.createElement("p");
-thanks.innerText="Proceed to Buy"
 
 var btn1 = document.createElement("button");
 btn1.innerText="Proceed to Buy"
+btn1.addEventListener("click",paymentpage)  
+function paymentpage(){
+    if(total!==0){
+        window.location.href = "./paymentpage.html";
+    }
+    else{
+        alert("YOUR CART IS EMPTY")
+    }
+}
 
 box2.append(subTotal,dis,btn1)
 document.querySelector("#remove2").append(box2);
@@ -47,6 +54,8 @@ if(JSON.parse(localStorage.getItem("myCart"))!==null&&JSON.parse(localStorage.ge
 
   cart.map(function(elem,index) {
   var box = document.createElement("div");
+//   var box2 = document.createElement("div");
+  var box3 = document.createElement("div");
 
   
 
@@ -81,7 +90,9 @@ if(JSON.parse(localStorage.getItem("myCart"))!==null&&JSON.parse(localStorage.ge
 
   priceDiv.append(price,Sprice,disc,btn);
 
-  box.append(img, name, priceDiv);
+//   box2.append(img);
+  box3.append(name, priceDiv);
+  box.append(img,box3);
 
   document.querySelector("#container1").append(box);
 });
