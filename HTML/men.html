@@ -30,6 +30,24 @@
       <img src="https://assets.myntassets.com/f_webp,w_490,c_limit,fl_progressive,dpr_2.0/assets/images/2022/3/24/418ae826-3239-409f-a43d-b0a8a084980b1648103530703-1-2-DK-extra-250off_01.jpg"" alt="">
       <img src="https://assets.myntassets.com/f_webp,w_490,c_limit,fl_progressive,dpr_2.0/assets/images/2022/3/24/d34a6ee0-7df2-4cdc-b46f-2fc297391e161648103530710-1-2-DK-extra-250off_02.jpg" alt="">
     </div>
+    <div id="sort">
+      <div>
+        <label for="Price">Sort By Price :</label>
+        <Select id="PriceS" name="Price" onchange="SortByPrice()">
+          <option value="">Sort By Price</option>
+          <option value="LowtoHigh">Low to High</option>
+          <option value="HightoLow">High to Low</option>
+        </Select>
+      </div>
+      <div>
+        <label for="Name">Sort By Brand :</label>
+        <Select id="Brand" name="Name" onchange="SortByName()">
+          <option value="">Sort By Brand</option>
+          <option value="REEBOK">REEBOK </option>
+          <option value="POLO">POLO</option>
+        </Select>
+      </div>
+    </div>
     <div id="container"></div>
   </body>
 </html>
